@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Offline</title>
+    <link rel="manifest" href="/manifest.json">
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/db.js"></script>
+    <title>Minha Primeira PWA</title>
 </head>
+<body class="fullscreen">
+    <div class="container">
+        <h1 class="title">Minha primeira PWA</h1>
+        
+        <div>
+            <input type="text" id="name" placeholder="Enter your name" />
+            <input type="number" id="age" placeholder="Enter your age" />
+        </div>
 
-<body>
-    <div class="offline">
-        <h1>Offline</h1>
-        <p>
-            A página atual não está disponivél offline. Por favor, tente novamente quando estiver com acesso à internet!
-        </p>
+        <div style="text-align: center;">
+            <button id="btnSalvar">Salvar</button>
+            <button id="btnAtualizar">Atualizar</button>
+            <button id="btnRemover">Remover</button>
+        </div>
+
+        <div>
+            <ul id="output"></ul>
+        </div>
     </div>
 </body>
-
 </html>
